@@ -146,8 +146,8 @@ router.get("/index/aboutus",(req,res)=>{
 
 // ---2yr---
 router.get("/index/team/2year",(req,res)=>{
-    // res.render("team/2yr/2year");
-    res.redirect("/404");
+    res.render("team/2yr/2year");
+    //res.redirect("/404");
 });
 // -----3yr--------
 router.get("/index/team/3year",(req,res)=>{
