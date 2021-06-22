@@ -30,6 +30,7 @@ router.get("/index/cine",(req,res)=>{
 router.get("/cinecsi",(req,res)=>{
     res.redirect("/index/cine");
 });
+
 // cine registration
 // router.get("/register",(req,res)=>{
 
