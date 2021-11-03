@@ -40,7 +40,8 @@ app.use("", csiPage);
 
 //Connect to Mongo
 // mongoose.connect("mongodb://localhost/verifycerti", {useUnifiedTopology: true, useNewUrlParser: true})
-mongoose.connect("mongodb+srv://abhiedward001:Abhi@jaiswal123@csi.rlolf.mongodb.net/csi?retryWrites=true&w=majority", {useUnifiedTopology: true, useNewUrlParser: true})
+mongoose.connect("mongodb+srv://abhiedward001:Abhi@jaiswal123@csi.rlolf.mongodb.net/csi?retryWrites=true&w=majority", {useUnifiedTopology: true, useNewUrlParser: true
+,useFindAndModify: false,useCreateIndex:true})
  .then(()=> console.log('MongoDb Connected...'))
  .catch(err=> console.log(err));
 
